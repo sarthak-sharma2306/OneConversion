@@ -1,6 +1,7 @@
 <h1 class = "bg-primary"> Welcome to {{title}}</h1>
-<app-tasks></app-tasks>
-<h4> List of Contacts</h4>
-<button (click)= "readme()">Click me</button>
-<div *ngIf="showMsg">This message is generated using *ngIf</div>
+<div>{{ subTitle}}</div>
+<div>{{epNum}}</div>
+<div>{{user.userId}} {{user.userName}} {{user.status}}</div>
+<h4>Learning event binding</h4>
+<button (click)="showalert();">Click me</button>
 <router-outlet></router-outlet>

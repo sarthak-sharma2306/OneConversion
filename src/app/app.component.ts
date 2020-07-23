@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oneConversion';
-  readme()
+  subTitle = 'Learning Interpolation is fun';
+  epNum =12;
+  user =
   {
-    console.log('Button Clicked');
+    userId: 201,
+    userName: 'Arc',
+    status: 'active'
+  };
+  showalert()
+  {
+    alert('Alert!!');
   }
-  showMsg= true ;
 }
