@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'products-view', component: ProductViewComponent },
   { path: 'products-edit', component: ProductEditComponent},
   {path: 'search', component: SearchComponent},
+  { path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
   { path: '**', component: PageNotFoundComponent}
 ];
 
