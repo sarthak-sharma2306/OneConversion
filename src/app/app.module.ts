@@ -9,7 +9,10 @@ import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { SigninComponent } from './signin/signin.component';
+import {FormsModule} from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component'
+import {ReactiveFormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +21,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProductViewComponent,
     ProductEditComponent,
     SearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SigninComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

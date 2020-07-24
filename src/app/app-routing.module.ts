@@ -6,8 +6,12 @@ import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SigninComponent } from './signin/signin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 const routes: Routes = [
   {path: '', redirectTo:'products-edit',pathMatch:'full' },
+  {path:'signin', component:SigninComponent},
+  {path:'checkout', component: CheckoutComponent},
   {path: 'products', component: ProductsComponent},
   {path:'products-view', component: ProductViewComponent },
   { path: 'products-edit', component: ProductEditComponent},
