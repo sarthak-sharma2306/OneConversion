@@ -1,18 +1,16 @@
 import { Injectable } from '@angular/core';
-
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
 export class ContactsService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
   getcontacts(){
-    const contactList=[
-      {contactId:1, contactName:'ARC'},
-      {contactId:1, contactName:'Tutorials'},
-      {contactId:1, contactName:'Youtube'},
-      {contactId:1, contactName:'Playlists'}
-    ];
-    return contactList;
+     return this.httpClient.get('http://localhost:3000/contacts')
+  }
+  callingFromTemplate()
+  {
+    console.log('Calling from template directly');
   }
 }

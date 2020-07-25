@@ -2,6 +2,7 @@
 <h4>List of Contacts:</h4>
 <ul>
     <li *ngFor="let contact of contactList">
-        {{contact.contactName}}
+        {{contact.FirstName}}
     </li>
 </ul>
+<button (Onclick)=contactsService.callingFromTemplate()>Calling Directly </button>

@@ -1,8 +1,8 @@
 {
     "contacts":[
-        {"id":1, "FirstName": "json-server","LastName":"typicode"},
-        {"id":3, "FirstName": "Some more title id 3","LastName":"author id 3"},
-        {"id":4, "FirstName": "title id 4","LastName":"author id 4"}
+        {"id":1, "FirstName": "Nik","LastName":"Tesla"},
+        {"id":3, "FirstName": "John","LastName":"Snow"},
+        {"id":4, "FirstName": "Walt","LastName":"White"}
     ],
     "comments":[
         {"id":1, "body":"somecontent", "postId":1}
