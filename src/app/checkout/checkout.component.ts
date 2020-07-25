@@ -21,7 +21,6 @@ export class CheckoutComponent implements OnInit {
     terms: ['', Validators.requiredTrue]
    });
   }
-
   ngOnInit(): void {
   }
   
