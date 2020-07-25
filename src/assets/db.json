@@ -1,6 +1,8 @@
 {
-    "posts":[
-        {"id":1, "title": "json-server","author":"typicode"}
+    "contacts":[
+        {"id":1, "FirstName": "json-server","LastName":"typicode"},
+        {"id":3, "FirstName": "Some more title id 3","LastName":"author id 3"},
+        {"id":4, "FirstName": "title id 4","LastName":"author id 4"}
     ],
     "comments":[
         {"id":1, "body":"somecontent", "postId":1}

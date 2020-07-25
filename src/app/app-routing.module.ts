@@ -8,10 +8,12 @@ import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SigninComponent } from './signin/signin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ContactsComponent } from './contacts/contacts.component';
 const routes: Routes = [
   {path: '', redirectTo:'products-edit',pathMatch:'full' },
   {path:'signin', component:SigninComponent},
   {path:'checkout', component: CheckoutComponent},
+  {path:'contacts', component: ContactsComponent},
   {path: 'products', component: ProductsComponent},
   {path:'products-view', component: ProductViewComponent },
   { path: 'products-edit', component: ProductEditComponent},

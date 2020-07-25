@@ -13,6 +13,8 @@ import { SigninComponent } from './signin/signin.component';
 import {FormsModule} from '@angular/forms';
 import { CheckoutComponent } from './checkout/checkout.component'
 import {ReactiveFormsModule} from '@angular/forms'
+import {HttpClientModule} from '@angular/common/http';
+import { ContactsComponent } from './contacts/contacts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +25,14 @@ import {ReactiveFormsModule} from '@angular/forms'
     SearchComponent,
     PageNotFoundComponent,
     SigninComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
