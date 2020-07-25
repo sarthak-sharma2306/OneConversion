@@ -9,7 +9,13 @@ export class ContactsService {
   getcontacts(){
      return this.httpClient.get('http://localhost:3000/contacts')
   }
-  callingFromTemplate()
+
+createContact(createBody)
+{
+  return this.httpClient.post('http://localhost:3000/contacts',createBody);
+}
+
+  callingFromTemplate() 
   {
     console.log('Calling from template directly');
   }
